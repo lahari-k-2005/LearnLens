@@ -974,7 +974,7 @@ function createQuillPanel() {
     saveNotification.style.bottom = "40px";
     saveNotification.style.right = "8px";
     saveNotification.style.padding = "6px 12px";
-    saveNotification.style.background = "#53a21f"; // matches theme
+    saveNotification.style.background = "#6a1b9a"; // matches theme
     saveNotification.style.color = "white";
     saveNotification.style.borderRadius = "4px";
     saveNotification.style.fontSize = "12px";
@@ -1186,10 +1186,10 @@ function createQuillPanel() {
         btn.onmouseleave = () => btn.style.opacity = "1";
     }
 
-    styleButton(exportBtn, "#1976D2");
-    styleButton(exportWordBtn, "#1e88e5");
+    styleButton(exportBtn, "#8e24aa");
+    styleButton(exportWordBtn, "#8e24aa");
     styleButton(uploadBtn, "#8e24aa");
-    styleButton(saveBtn, "#7b1fa2");
+    styleButton(saveBtn, "#8e24aa");
     styleButton(deleteBtn, "#ef5350");
 
     buttonContainer.appendChild(exportBtn);
