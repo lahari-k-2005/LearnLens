@@ -1,0 +1,44 @@
+{
+    "manifest_version": 3,
+    "name": "Learn Lens",
+    "version": "1.0",
+    "description": "Blur non-educational YouTube videos based on keywords.",
+    "permissions": ["cookies", "storage"],
+    "host_permissions": ["https://www.youtube.com/*", "http://localhost:5000/*", "http://localhost:5001/*"],
+
+    "background": {
+      "service_worker": "background.js"
+    },
+    
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "config.json",
+          "resources/*"
+        ],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "css": ["styles.css", "resources/quill.snow.css"],
+        "js": [
+          "resources/quill.min.js",
+          "resources/jspdf.umd.min.js",
+          "content.js", 
+          "notesPanel.js"
+        ],
+        "run_at": "document_end"
+      }
+    ],
+    "action": {
+      "default_popup": "signup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    }
+  }
+  

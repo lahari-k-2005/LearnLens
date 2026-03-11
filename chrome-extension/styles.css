@@ -1,0 +1,84 @@
+#yt-notes-container,
+#yt-notes-toggle {
+    filter: none !important;
+    z-index: 999999 !important;
+}
+
+
+#yt-notes-container {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    width: 320px;
+    height: 380px;
+    background: #f8f5ff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(88, 24, 124, 0.3);
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+#yt-notes-header {
+    background: linear-gradient(135deg, #7b2cbf, #9d4edd);
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    cursor: move;
+    font-size: medium;
+}
+
+/* Toolbar */
+#yt-notes-toolbar {
+    display: flex;
+    gap: 6px;
+    padding: 6px;
+    background: #e9ddff;
+    border-bottom: 1px solid #d0bfff;
+}
+
+#yt-notes-toolbar button {
+    background: white;
+    border: 1px solid #c77dff;
+    border-radius: 6px;
+    padding: 4px 6px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#yt-notes-toolbar button:hover {
+    background: #c77dff;
+    color: white;
+}
+
+/* Editor */
+#yt-notes-editor {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    overflow-y: auto;
+    font-size: 14px;
+    color: #000000;
+}
+
+/* Toggle Button */
+#yt-notes-toggle {
+    position: fixed;
+    bottom: 120px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #7b2cbf, #9d4edd);
+    color: white;
+    font-size: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999999;
+}
