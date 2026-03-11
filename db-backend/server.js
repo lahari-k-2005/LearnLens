@@ -13,7 +13,7 @@ app.use(express.urlencoded({ limit: "10mb", extended: true }));
    MongoDB Atlas Connection
 ================================= */
 
-mongoose.connect("mongodb+srv://abhinayak2611_db_user:B9SaCMRY3ylfhB@cluster0.8rzhuqh.mongodb.net/learnlens?appName=Cluster0")
+mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
 

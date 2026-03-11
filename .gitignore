@@ -1,2 +1,3 @@
 chrome-extension/config.json
 db-backend/node_modules/
+.env
